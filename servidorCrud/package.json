@@ -1,0 +1,24 @@
+{
+  "name": "promesas",
+  "version": "1.0.0",
+  "description": "Servidor CRUD interactivo con Node.js nativo",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc"
+  },
+  "keywords": ["node", "http", "crud", "interactive"],
+  "author": "Tu Nombre",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/prompt-sync": "^4.2.3",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
