@@ -19,17 +19,17 @@ export class AuthService {
                 throw new Error("Contraseña incorrecta");
             }
             
-            console.log("✅ Sesión iniciada con éxito");
-            console.log(`👤 Bienvenido ${usuario.nombre} ${usuario.apellido}`);
+            console.log("Sesión iniciada con éxito");
+            console.log(`Bienvenido ${usuario.nombre} ${usuario.apellido}`);
             
         } catch (error) {
-            console.error("❌ No se pudo iniciar sesión");
+            console.error("No se pudo iniciar sesión");
             throw error;
         }
     }
 
     async register(usuario: Usuario): Promise<void> {
         await this.service.agregar(usuario);
-        console.log("✅ Usuario registrado correctamente");
+        console.log("Usuario registrado correctamente");
     }
 }

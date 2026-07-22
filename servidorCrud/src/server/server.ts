@@ -8,16 +8,16 @@ const servidor = createServer(async (req, res) => {
 
 servidor.listen(3000, () => {
     console.log("\n================================");
-    console.log("🚀 Servidor HTTP Iniciado");
-    console.log("📡 http://localhost:3000");
-    console.log("\n📋 Endpoints disponibles:");
-    console.log("  👤 /usuarios (GET, POST)");
-    console.log("  👤 /usuarios/buscar/:id (GET)");
-    console.log("  👤 /usuarios (PUT)");
-    console.log("  👤 /usuarios/delete/:id (DELETE)");
-    console.log("  📦 /productos (GET, POST)");
-    console.log("  📦 /productos/buscar/:id (GET)");
-    console.log("  📦 /productos (PUT)");
-    console.log("  📦 /productos/delete/:id (DELETE)");
+    console.log("Servidor HTTP Iniciado");
+    console.log("http://localhost:3000");
+    console.log("\nEndpoints disponibles:");
+    console.log("  /usuarios (GET, POST)");
+    console.log("  /usuarios/buscar/:id (GET)");
+    console.log("  /usuarios (PUT)");
+    console.log("  /usuarios/delete/:id (DELETE)");
+    console.log("  /productos (GET, POST)");
+    console.log("  /productos/buscar/:id (GET)");
+    console.log("  /productos (PUT)");
+    console.log("  /productos/delete/:id (DELETE)");
     console.log("================================");
 });

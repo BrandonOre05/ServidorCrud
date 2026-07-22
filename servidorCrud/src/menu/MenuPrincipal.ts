@@ -21,7 +21,7 @@ export async function authentication() {
     let estadoT: string;
 
     do {
-        console.log("\n===== 🔐 INICIO DE SESIÓN =====");
+        console.log("\n===== INICIO DE SESIÓN =====");
         console.log("1. Iniciar Sesión");
         console.log("2. Registrarse");
         console.log("3. Salir");
@@ -57,10 +57,10 @@ export async function authentication() {
                 });
                 break;
             case 3:
-                console.log("👋 Has salido del programa.");
+                console.log("Has salido del programa.");
                 break;
             default:
-                console.log("❌ Opción no válida.");
+                console.log("Opción no válida.");
                 break;
         }
     } while (opcion !== 3);
@@ -146,7 +146,7 @@ export async function menuUsuarios() {
                 console.log("Volviendo al menú principal...");
                 break;
             default:
-                console.log("❌ Opción no válida.");
+                console.log("Opción no válida.");
         }
     } while (opcion !== 6);
 }
@@ -159,7 +159,7 @@ export async function menuProductos() {
     let opcion: number = 0;
 
     do {
-        console.log("\n===== 📦 GESTIÓN DE PRODUCTOS =====");
+        console.log("\n===== GESTIÓN DE PRODUCTOS =====");
         console.log("1. Listar productos");
         console.log("2. Agregar producto");
         console.log("3. Buscar producto");
@@ -201,7 +201,7 @@ export async function menuProductos() {
                 console.log("Volviendo al menú principal...");
                 break;
             default:
-                console.log("❌ Opción no válida.");
+                console.log("Opción no válida.");
         }
     } while (opcion !== 6);
 }
@@ -210,10 +210,10 @@ export async function menuPrincipal() {
     let opcion: number = 0;
     
     do {
-        console.log("\n===== 🚀 MENÚ PRINCIPAL =====");
-        console.log("1. 👤 Gestionar Usuarios");
-        console.log("2. 📦 Gestionar Productos");
-        console.log("3. 🔐 Cerrar Sesión");
+        console.log("\n===== MENÚ PRINCIPAL =====");
+        console.log("1. Gestionar Usuarios");
+        console.log("2. Gestionar Productos");
+        console.log("3. Cerrar Sesión");
         
         opcion = Number(await rl.question("Seleccione una opción: "));
         
@@ -225,10 +225,10 @@ export async function menuPrincipal() {
                 await menuProductos();
                 break;
             case 3:
-                console.log("👋 Cerrando sesión...");
+                console.log("Cerrando sesión...");
                 break;
             default:
-                console.log("❌ Opción no válida.");
+                console.log("Opción no válida.");
                 break;
         }
     } while (opcion !== 3);

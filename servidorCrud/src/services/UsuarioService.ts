@@ -30,7 +30,7 @@ export class UsuarioService {
 
         usuarios.push(usuario);
         await this.repository.guardarUsuario(usuarios);
-        console.log("✅ Usuario agregado correctamente.");
+        console.log("Usuario agregado correctamente.");
     }
 
     async buscar(id: number): Promise<Usuario> {
@@ -56,7 +56,7 @@ export class UsuarioService {
 
         usuarios[indice] = usuario;
         await this.repository.guardarUsuario(usuarios);
-        console.log("✅ Usuario actualizado correctamente.");
+        console.log("Usuario actualizado correctamente.");
     }
 
     async eliminar(id: number): Promise<void> {
@@ -69,6 +69,6 @@ export class UsuarioService {
         }
 
         await this.repository.guardarUsuario(nuevos);
-        console.log("✅ Usuario eliminado correctamente.");
+        console.log("Usuario eliminado correctamente.");
     }
 }

@@ -23,7 +23,7 @@ export class ProductoService {
         
         productos.push(producto);
         await this.repository.guardarProducto(productos);
-        console.log("✅ Producto agregado correctamente.");
+        console.log("Producto agregado correctamente.");
     }
 
     async buscar(id: number): Promise<Producto> {
@@ -48,7 +48,7 @@ export class ProductoService {
         
         productos[indice] = producto;
         await this.repository.guardarProducto(productos);
-        console.log("✅ Producto actualizado correctamente.");
+        console.log("Producto actualizado correctamente.");
     }
 
     async eliminar(id: number): Promise<void> {
@@ -61,6 +61,6 @@ export class ProductoService {
         }
 
         await this.repository.guardarProducto(nuevos);
-        console.log("✅ Producto eliminado correctamente.");
+        console.log("Producto eliminado correctamente.");
     }
 }
