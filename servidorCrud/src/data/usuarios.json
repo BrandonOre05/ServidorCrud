@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "nombre": "Kenneth",
+        "apellido": "Caneda",
+        "edad": 17,
+        "correo": "kcaneda@kinal.edu.gt",
+        "contraseña": "12345678",
+        "rol": "ADMIN",
+        "estado": "ACTIVO"
+    },
+    {
+        "id": 2,
+        "nombre": "Emilio",
+        "apellido": "Pasán",
+        "edad": 17,
+        "correo": "cbarahona@gmail.com",
+        "contraseña": "cbarahona1234",
+        "rol": "ADMIN",
+        "estado": "ACTIVO"
+    }
+]
